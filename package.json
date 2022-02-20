@@ -4,7 +4,7 @@
   "description": "",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css-blog": "tailwindcss /blog/styles/index.css -o /styles/tailwind.css"
   },
   "author": "erfan-gharib",
   "license": "ISC",

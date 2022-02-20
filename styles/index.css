@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: DiodrumArabic;
+    src: url(../assets/fonts/DiodrumArabic-Semibold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: DiodrumArabic;
+    src: url(../assets/fonts/DiodrumArabic-Medium.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: DiodrumArabic;
+    src: url(../assets/fonts/DiodrumArabic-Light.ttf);
+    font-weight: 200;
+}
+
+body,input,div,span {
+    font-family: DiodrumArabic !important;
+}
+
+.ico-google {
+    background-image: url(../assets/icons/119930_google_512x512.png);
+}
