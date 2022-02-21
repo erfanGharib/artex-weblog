@@ -1,33 +1,35 @@
-<div id="signIn-box" class="w-7/12 flex flex-col">
+<div id="logIn-box" class="md:w-7/12 w-5/6 flex flex-col">
     <div class="flex flex-col">
         <h1 class="text-4xl font-bold">خوش برگشتید</h1>
-        <span class="opacity-40 mt-6">خوش برگشتید! لطفا اطلاعات خود را وارد کنید.</span>    
+        <span class="opacity-40 mt-5">خوش برگشتید! لطفا اطلاعات خود را وارد کنید.</span>    
     </div>
 
-    <form class="flex flex-col mt-6">
+    <form class="flex flex-col mt-5">
         <label for="email-input">
             <span>ایمیل</span>
-            <input placeholder="لطفا ایمیل خود را وارد کنید" class="pb-2.5 pr-3 text-sm placeholder:text-sm rounded-md mt-3 placeholder:opacity-40 w-full border h-11" type="email" id="email-input">
+            <input placeholder="لطفا ایمیل خود را وارد کنید" class="input" type="email" id="email-input">
         </label>
 
-        <label for="pass-input" class="mt-3">
+        <label for="pass-input" class="mt-2">
             <span>رمز عبور</span>
-            <input placeholder="لطفا رمز عبور خود را وارد کنید" class="pb-2.5 pr-3 text-sm placeholder:text-sm rounded-md mt-3 placeholder:opacity-40 w-full border h-11" type="password" id="pass-input">                    
+            <input placeholder="لطفا رمز عبور خود را وارد کنید" class="input" type="password" id="pass-input">                    
         </label>
     </form>
 
-    <div class="mt-3">
-        <label for="">
-            <input type="text">
+    <div class="my-2.5 flex items-center justify-between flex-wrap">
+        <label for="rememberMe" class="flex items-center">
+            <input id="rememberMe" type="checkbox" class="relative ml-2 top-0.5">
+            <span>من را بخاطر بسپار</span>
         </label>
-        <a href="#">رمز عبورم را فراموش کرده ام</a>    
+        <a href="#" class="hover:underline">رمز عبورم را فراموش کرده ام</a>
     </div>
     
-    <button class="hover:bg-opacity-80 justify-center w-full h-11 rounded-md flex bg-black text-white">ورود</button>
-    <button class="hover:bg-black hover:bg-opacity-10 justify-center items-center pb-3 mt-3 flex h-11 border rounded-md">
-        <i class="ico-google mt-3 ml-2 bg-cover block w-4 h-4"></i>
+    <button class="button sign-btn">ورود</button>
+    <button class="button google-btn">
+        <i class="ico-google ml-2 mt-1 bg-cover block w-4 h-4"></i>
         ورود با گوگل 
     </button>
+
     <span class="mx-auto mt-3 text-black text-opacity-40">
         حساب کاربری ندارید؟ 
         <a class="text-opacity-100 hover:underline text-black" href="#">ثبت نام</a>

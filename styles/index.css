@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: DiodrumArabic;
-    src: url(../assets/fonts/DiodrumArabic-Semibold.ttf);
+    src: url(../assets/fonts/DiodrumArabic-Bold.ttf);
     font-weight: 600;
 }
 @font-face {
     font-family: DiodrumArabic;
-    src: url(../assets/fonts/DiodrumArabic-Medium.ttf);
+    src: url(../assets/fonts/DiodrumArabic-Semibold.ttf);
     font-weight: 400;
 }
 @font-face {
@@ -18,10 +18,6 @@
     font-weight: 200;
 }
 
-body,input,div,span {
+body,input,div,span,h1,h2,h3,label,a {
     font-family: DiodrumArabic !important;
-}
-
-.ico-google {
-    background-image: url(../assets/icons/119930_google_512x512.png);
 }
