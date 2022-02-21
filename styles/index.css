@@ -3,21 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: DiodrumArabic;
-    src: url(../assets/fonts/DiodrumArabic-Bold.ttf);
+    font-family: vazir;
+    src: url(../assets/fonts/Vazir-Bold.ttf);
     font-weight: 600;
 }
 @font-face {
-    font-family: DiodrumArabic;
-    src: url(../assets/fonts/DiodrumArabic-Semibold.ttf);
-    font-weight: 400;
-}
-@font-face {
-    font-family: DiodrumArabic;
-    src: url(../assets/fonts/DiodrumArabic-Light.ttf);
+    font-family: vazir;
+    src: url(../assets/fonts/Vazir-Light.ttf);
     font-weight: 200;
 }
 
 body,input,div,span,h1,h2,h3,label,a {
-    font-family: DiodrumArabic !important;
+    font-family: vazir !important;
 }
