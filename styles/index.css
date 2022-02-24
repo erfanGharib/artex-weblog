@@ -4,6 +4,11 @@
 
 @font-face {
     font-family: vazir;
+    src: url(../assets/fonts/Vazir-black.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: vazir;
     src: url(../assets/fonts/Vazir-Bold.ttf);
     font-weight: 600;
 }
@@ -15,4 +20,29 @@
 
 body,input,div,span,h1,h2,h3,label,a {
     font-family: vazir !important;
+}
+h1,h2,h3 {
+    @apply font-black mb-2;
+}
+h3 {
+    @apply text-2xl;
+}
+p {
+    @apply text-secondary;
+}
+
+.f-jcb-ic {
+    @apply flex justify-between items-center;
+}
+.ico {
+    @apply bg-contain block ml-1 rounded-md bg-secondary;
+}
+.ico-1 {
+    @apply w-5 h-5;
+}
+.ico-2 {
+    @apply w-7 h-7;
+}
+.artex-logo {
+    @apply bg-headLine block w-32 h-10 bg-contain rounded-md;
 }

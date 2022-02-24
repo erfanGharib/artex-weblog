@@ -4,6 +4,7 @@
   "description": "",
   "main": "./scripts/index.js",
   "scripts": {
+    "b:css-main": "tailwindcss ./styles/index.css -o ./styles/tailwind.css",
     "b:css-blog": "tailwindcss ./pages/blog/styles/index.css -o ./styles/tailwind.css",
     "b:css-signInUp": "tailwindcss ./pages/signIn-logIn/index.css -o ./styles/tailwind.css"
   },

@@ -468,6 +468,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -478,6 +482,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .top-0 {
   top: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .my-auto {
@@ -537,6 +549,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.25rem;
 }
 
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -555,10 +579,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-screen {
   height: 100vh;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .h-80 {
@@ -583,6 +603,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.min-h-64 {
+  min-height: 256px;
 }
 
 .w-full {
@@ -621,6 +653,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 83.333333%;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -643,6 +679,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -669,23 +709,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.125rem;
 }
 
-.border-r-8 {
-  border-right-width: 8px;
+.border-t {
+  border-top-width: 1px;
 }
 
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
-}
-
-.bg-gray-200 {
+.bg-bg {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -713,8 +743,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(177 177 177 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-right {
@@ -727,6 +766,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-2 {
@@ -744,7 +787,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0px;
 }
 
-.pr-6 {
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
@@ -767,9 +821,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
-.text-gray-800 {
+.italic {
+  font-style: italic;
+}
+
+.text-headLine {
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
+  color: rgb(34 34 34 / var(--tw-text-opacity));
 }
 
 .text-gray-600 {
@@ -810,86 +868,82 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 200ms;
 }
 
-.input {
-  margin-top: 0.75rem;
-  height: 2.75rem;
-  width: 100%;
-  border-radius: 0.375rem;
-  border-width: 1px;
-  padding-right: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+@font-face {
+  font-family: vazir;
+
+  src: url(../assets/fonts/Vazir-black.ttf);
+
+  font-weight: 900;
 }
 
-.input::-moz-placeholder {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  opacity: 0.5;
+@font-face {
+  font-family: vazir;
+
+  src: url(../assets/fonts/Vazir-Bold.ttf);
+
+  font-weight: 600;
 }
 
-.input:-ms-input-placeholder {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  opacity: 0.5;
+@font-face {
+  font-family: vazir;
+
+  src: url(../assets/fonts/Vazir-Light.ttf);
+
+  font-weight: 200;
 }
 
-.input::placeholder {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  opacity: 0.5;
+body,input,div,span,h1,h2,h3,label,a {
+  font-family: vazir !important;
 }
 
-.side-img {
-  background-image: url(../../assets/images/annie-spratt-OTy0mkqc2Yk-unsplash.jpg);
+h1, h2, h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 900;
 }
 
-.button {
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+p {
+  --tw-text-opacity: 1;
+  color: rgb(177 177 177 / var(--tw-text-opacity));
+}
+
+.f-jcb-ic {
   display: flex;
-  height: 2.75rem;
-  width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.ico {
+  margin-left: 0.25rem;
+  display: block;
   border-radius: 0.375rem;
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
-}
-
-.google-btn {
-  margin-top: 0.5rem;
-  border-width: 1px;
-}
-
-.google-btn:hover {
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.1;
-}
-
-.sign-btn {
-  margin-top: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  padding-bottom: 0.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-color: rgb(177 177 177 / var(--tw-bg-opacity));
+  background-size: contain;
 }
 
-.sign-btn:hover {
-  --tw-bg-opacity: 0.8;
+.ico-1 {
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
-.ico-google {
-  background-image: url(../../assets/icons/119930_google_512x512.png);
+.ico-2 {
+  height: 1.75rem;
+  width: 1.75rem;
 }
 
-.warning {
-  margin-right: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
+.artex-logo {
+  display: block;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity));
+  background-size: contain;
 }
 
 .hover\:bg-gray-600:hover {
@@ -923,7 +977,49 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+@media (min-width: 640px) {
+  .sm\:relative {
+    position: relative;
+  }
+
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:h-auto {
+    height: auto;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -934,5 +1030,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-7\/12 {
     width: 58.333333%;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
   }
 }
