@@ -1,7 +1,7 @@
 module.exports = {
   purge: [
-    './pages/**/*.{html,js}',
-    './components/**/*.{html,js}',
+    './static/**/*.{html,js}',
+    './templates/**/*.{html,js}',
   ],
   content: [],
   theme: {
@@ -13,9 +13,12 @@ module.exports = {
         64:'256px'
       },
       colors: {
-        headLine:'#222',
+        orange: '#FFC134',
+        'dark-gray': '#212121',
+        'light-gray': '#f8f8f8',
+        headLine: '#222',
         secondary: '#b1b1b1',
-        bg: '#f7f7f7'
+        light: '#f7f7f7',
       }
 
     },

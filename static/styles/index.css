@@ -14,6 +14,11 @@
 }
 @font-face {
     font-family: vazir;
+    src: url(../assets/fonts/Vazir-Medium.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: vazir;
     src: url(../assets/fonts/Vazir-Light.ttf);
     font-weight: 200;
 }
@@ -45,4 +50,16 @@ p {
 }
 .artex-logo {
     @apply bg-headLine block w-32 h-10 bg-contain rounded-md;
+}
+.bg-403 {
+    background: #222 url(../assets/images/403.png) no-repeat;
+    background-size: cover;
+}
+.bg-404 {
+    background: #222 url(../assets/images/404.png) no-repeat;
+    background-size: cover;
+}
+button {
+    border-radius: 9px;
+    @apply bg-dark-gray;
 }

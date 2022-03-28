@@ -3,22 +3,22 @@
 @tailwind utilities;
 
 .input {
-    @apply pr-3 text-sm placeholder:text-sm rounded-md mt-3 placeholder:opacity-50 w-full border h-11;
+    @apply pr-3 bg-transparent text-dark-gray text-sm placeholder:text-sm rounded-md mt-3 placeholder:opacity-80 w-full border h-11;
 }
 .side-img {
-    background-image: url(../../assets/images/annie-spratt-OTy0mkqc2Yk-unsplash.jpg);
+    background-image: url(../../static/assets/images/form-pic.png);
 }
 .button {
     @apply transition duration-200 items-center justify-center w-full h-11 rounded-md flex;
 }
 .google-btn {
-    @apply border hover:bg-black hover:bg-opacity-10 mt-2;
+    @apply border hover:bg-dark-gray hover:bg-opacity-10 mt-2;
 }
 .sign-btn {
-    @apply text-white bg-black pb-1 hover:bg-opacity-80 mt-2;
+    @apply text-white bg-dark-gray pb-1 hover:bg-opacity-80 mt-2;
 }
 .ico-google {
-    background-image: url(../../assets/icons/119930_google_512x512.png);
+    background-image: url(../../static/assets/icons/119930_google_512x512.png);
 }
 .warning {
     @apply text-red-600 text-sm mr-1;

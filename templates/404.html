@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/tailwind.css">
+    <link rel="stylesheet" href="../static/styles/index.css">
+    <title>404 Error</title>
+</head>
+<body class="bg-light w-full f-jcb-ic h-screen text-dark-gray" dir="rtl">
+    <div class="bg-404 w-2/5 h-full sm:block hidden"></div>
+    <div class="w-full sm:w-3/5 px-10 sm:px-20">
+        <div class="flex justify-between w-full flex-col">
+            <h1 class="font-bold h-28 text-9xl">404</h1>
+            <p class="font-medium text-dark-gray mb-1 text-3xl">چنین صفحه ای یافت نشد</p>
+            <p class="font-light mb-4">با عرض پوزش از شما، چنین صفحه ای در سایت وجود ندارد یا این صفحه از سایت پاک شده است</p>
+        </div>
+    </div>
+</body>
+<script type="module">
+    import backHomeBtn from '../static/components/back-home-btn.js';
+    import { get } from '../static/scripts/createElement.js';
+    get('div', true)[2].innerHTML += backHomeBtn;
+</script>
+</html>

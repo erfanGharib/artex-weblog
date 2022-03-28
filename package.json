@@ -2,11 +2,11 @@
   "name": "artex-weblog",
   "version": "1.0.0",
   "description": "",
-  "main": "./scripts/index.js",
+  "main": "./static/scripts/index.js",
   "scripts": {
     "b:css-main": "tailwindcss ./static/styles/index.css -o ./static/styles/tailwind.css",
     "b:css-blog": "tailwindcss ./templates/blog/styles/index.css -o ./static/styles/tailwind.css",
-    "b:css-signInUp": "tailwindcss ./templates/signIn-logIn/index.css -o ./static/styles/tailwind.css"
+    "b:css-signInUp": "tailwindcss ./templates/signUp-logIn/index.css -o ./static/styles/tailwind.css"
   },
   "author": "erfan-gharib",
   "license": "ISC",
