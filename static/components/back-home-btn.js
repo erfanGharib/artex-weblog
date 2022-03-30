@@ -1,3 +1,5 @@
+import { get } from '../scripts/createElement.js';
+
 const backHomeBtn = (`
     <a href='/'>
         <button class="p-2 w-44 hover:opacity-80 transition-opacity text-orange f-jcb-ic font-light bg-dark-gray">
@@ -8,4 +10,4 @@ const backHomeBtn = (`
         </button>
     </a>
 `);
-export default backHomeBtn;
+get('div', true)[2].innerHTML += backHomeBtn;

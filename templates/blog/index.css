@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-start {
+    @apply flex items-start flex-col;
+}
+.post-preview-icon {
+    @apply h-full mr-8 opacity-80 flex items-center justify-center;
+}
+.side-bar-link {
+    @apply overflow-hidden hover:text-opacity-80 bg-white text-light-gray text-opacity-50 relative p-3 w-full bg-opacity-10 rounded-lg mb-3;
+}
+.side-bar-link::before {
+    @apply h-7 w-2 rounded-md bg-orange block -right-1 top-3 absolute;
+}

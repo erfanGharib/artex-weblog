@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/styles/index.css">
     <title>403 Error</title>
 </head>
-<body class="bg-light w-full f-jcb-ic h-screen text-dark-gray" dir="rtl">
+<body class="f-jcb-ic text-dark-gray" dir="rtl">
     <div class="bg-403 w-2/5 h-full sm:block hidden"></div>
     <div class="w-full sm:w-3/5 px-10 sm:px-20">
         <div class="flex justify-between w-full flex-col">
@@ -18,9 +18,5 @@
         </div>
     </div>
 </body>
-<script type="module">
-    import backHomeBtn from '../static/components/back-home-btn.js';
-    import { get } from '../static/scripts/createElement.js';
-    get('div', true)[2].innerHTML += backHomeBtn;
-</script>
+<script src="../static/components/back-home-btn.js" type="module"></script>
 </html>

@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: vazir;
-    src: url(../assets/fonts/Vazir-black.ttf);
+    src: url(../assets/fonts/Vazir-Black-FD.ttf);
     font-weight: 900;
 }
 @font-face {
@@ -23,8 +23,49 @@
     font-weight: 200;
 }
 
+
+.flex-start {
+    @apply flex items-start flex-col;
+}
+.post-preview-icon {
+    @apply h-full md:mr-8 mr-4 opacity-80 flex items-center justify-center;
+}
+.side-bar-link {
+    @apply overflow-hidden hover:text-opacity-80 bg-white text-light-gray text-opacity-50 relative p-3 w-full bg-opacity-10 rounded-lg mb-3;
+}
+.side-bar-link > span {
+    @apply h-7 w-2 rounded-md bg-orange block -right-1 top-2.5 absolute;
+}
+
+
+.input {
+    @apply pr-3 bg-transparent text-dark-gray text-sm placeholder:text-sm rounded-md mt-3 placeholder:opacity-80 w-full border h-11;
+}
+.side-img {
+    background-image: url(../../static/assets/images/form-pic.png);
+}
+.button {
+    @apply transition duration-200 items-center justify-center w-full h-11 rounded-md flex;
+}
+.google-btn {
+    @apply border hover:bg-dark-gray hover:bg-opacity-10 mt-2;
+}
+.sign-btn {
+    @apply text-white bg-dark-gray pb-1 hover:bg-opacity-80 mt-2;
+}
+.ico-google {
+    background-image: url(../../static/assets/icons/119930_google_512x512.png);
+}
+.warning {
+    @apply text-red-600 text-sm mr-1;
+}
+
+
+body {
+    @apply text-dark-gray bg-light w-full h-screen scroll-smooth;
+}
 body,input,div,span,h1,h2,h3,label,a {
-    font-family: vazir !important;
+    font-family: vazir, Arial, Helvetica, sans-serif !important;
 }
 h1,h2,h3 {
     @apply font-black mb-2;
@@ -60,6 +101,9 @@ p {
     background-size: cover;
 }
 button {
-    border-radius: 9px;
+    border-radius: 7px;
     @apply bg-dark-gray;
+}
+svg {
+    margin-left: 8px;
 }

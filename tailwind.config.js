@@ -7,10 +7,14 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '12/13':'95%'
+        '12/13':'95%',
+        30:'29%'
       },
       minHeight: {
-        64:'256px'
+        64: '256px',
+        60: '15rem',
+        105: '35rem',
+        24: '6rem'
       },
       colors: {
         orange: '#FFC134',
@@ -19,8 +23,10 @@ module.exports = {
         headLine: '#222',
         secondary: '#b1b1b1',
         light: '#f7f7f7',
+      },
+      boxShadow: {
+        cs: '0 15px 25px #22222260'
       }
-
     },
   },
   plugins: [],
